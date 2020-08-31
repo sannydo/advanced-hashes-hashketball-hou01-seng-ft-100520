@@ -235,7 +235,7 @@ def player_stats(input)
       team_info.each do |key, value|
         if key == :players
           value.each do |player|
-            output.push(player[:player_name, :number, :shoe, :points, :rebounds, :assists, :steals, :blocks, :slam_dunks])
+            output(player[:player_name, :number, :shoe, :points, :rebounds, :assists, :steals, :blocks, :slam_dunks])
           end
         end
       end
