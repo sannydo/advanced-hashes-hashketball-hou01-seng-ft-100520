@@ -228,6 +228,22 @@ end
 #       }
 #   ```
 
+def player_stats
+  output = []
+  game_hash.each do |team, team_info|
+    if team_info[:player_name] == input
+      team_info.each do |key, value|
+        if key == :players
+          value.each do |player|
+            output.push(player[:number, :shoe, :points, :rebounds, :assists, :steals, :blocks, :slam_dunks])
+          end
+        end
+      end
+    end
+  end
+  return output
+end
+
 # * Build a method, `big_shoe_rebounds`, that will return the number of rebounds
 #   associated with the player that has the largest shoe size. Break this one down
 #   into steps:
