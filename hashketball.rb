@@ -192,8 +192,8 @@ end
 
 
 def player_numbers(team_name, game)
-  game.each do |team, team_hash|
-    
+  game.each do |team, game_hash|
+    if 
   end
 end
 
