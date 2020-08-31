@@ -189,7 +189,7 @@ end
 #   returns an `Array` of the jersey numbers for that team.
 
 def player_numbers(team_name)
-  team(team_name)[:players]
+  team(team_name)[:players].map
   
 end
 
