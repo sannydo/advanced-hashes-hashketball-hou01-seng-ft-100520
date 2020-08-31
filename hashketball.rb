@@ -191,9 +191,7 @@ end
 def player_numbers(team_name)
   team(team_name)[:players].map do |key, value|
     value[:number]
-    
   end
-  
 end
 
 # * Build a method, `player_stats`, that takes in an argument of a player's name
