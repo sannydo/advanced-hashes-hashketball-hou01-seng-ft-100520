@@ -241,7 +241,6 @@ def player_stats(input)
       end
     end
   end
-  return output
 end
 
 # * Build a method, `big_shoe_rebounds`, that will return the number of rebounds
