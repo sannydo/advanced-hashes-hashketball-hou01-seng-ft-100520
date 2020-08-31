@@ -252,6 +252,7 @@ end
 #   * Remember to think about return values here.
 
 def big_shoe_rebounds
+  big_shoe = 0
   
 end
 
