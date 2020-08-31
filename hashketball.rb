@@ -143,7 +143,7 @@ def num_points_scored(player)
   end
 end
 
-def team team_name
+def team (team_name)
   case team_name
   when game_hash[:home][:team_name]
     game_hash[:home]
