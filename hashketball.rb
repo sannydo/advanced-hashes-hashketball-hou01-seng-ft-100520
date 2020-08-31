@@ -191,7 +191,7 @@ end
 #   returns an `Array` of the jersey numbers for that team.
 
 def player_numbers team_name
-  team(team_name)[:players].each do |key, value|
+  game_hash[:players].each do |key, value|
     value[:number]
   end
 end
