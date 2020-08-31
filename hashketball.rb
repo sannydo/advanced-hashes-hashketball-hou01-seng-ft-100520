@@ -191,10 +191,11 @@ end
 #   returns an `Array` of the jersey numbers for that team.
 
 def player_numbers(team_name)
-  numb = 0
-  game_hash.each do |name, numbers|
-    if name[:player_name] == player
-      return numb = jersey[:number]
+  numbers = 0
+  game_hash.each do |name, jersey|
+    jersey[:players].each do |stats|
+    if stats[:name] == player
+      return numbers = jersey[:number]
     end
   end
 end
