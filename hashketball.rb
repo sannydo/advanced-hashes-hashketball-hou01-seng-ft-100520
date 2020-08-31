@@ -195,7 +195,7 @@ def player_numbers(team_name)
   game_hash.each do |name, jersey|
     jersey[:players].each do |stats|
     if stats[:name] == player
-      return numbers = jersey[:number]
+      return numbers = stats[:number]
     end
   end
 end
