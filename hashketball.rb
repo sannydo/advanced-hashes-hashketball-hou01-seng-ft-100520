@@ -191,7 +191,7 @@ end
 #   returns an `Array` of the jersey numbers for that team.
 
 
-def player_numbers(team_names)
+def player_numbers(team_name, game)
   team(team_name)[:players].map do |key, values|
     value[:number]
   end
