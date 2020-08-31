@@ -191,10 +191,10 @@ end
 def player_numbers(team_name)
   case team_name
   when game_hash[:home][:team_name]
-    game_hash[:home][:colors]
+    game_hash[:home][:number]
     
   when game_hash[:away][:team_name]
-    game_hash[:away][:colors]
+    game_hash[:away][:number]
   end
 end
 
