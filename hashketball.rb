@@ -144,7 +144,14 @@ def num_points_scored(player)
 end
 
 def team team_name
-  
+  case team_name
+  when game_hash[:home][:team_name]
+    game_hash[:home]
+    
+  when game_hash[:away][:team_name]
+    game_hash[:away]
+  end
+end
 
 # * Build a method, `shoe_size`, that takes in an argument of a player's name and
 #   returns the shoe size for that player.
