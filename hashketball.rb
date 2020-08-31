@@ -177,7 +177,7 @@ end
 #   returns an `Array` of that team's colors.
 
 def team_colors (team_name)
-  
+  team(team_name)[:colors]
 end
 
 # * Build a method, `team_names`, that operates on the game `Hash` to return an
