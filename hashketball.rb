@@ -228,7 +228,7 @@ end
 #       }
 #   ```
 
-def player_stats
+def player_stats(input)
   output = []
   game_hash.each do |team, team_info|
     if team_info[:player_name] == input
