@@ -192,7 +192,7 @@ end
 
 def player_numbers team_name
   game_hash.each do |key, value|
-    key[:player_name].do |sort|
+    key[:player_name].each do |sort|
     value[:number]
   end
 end
