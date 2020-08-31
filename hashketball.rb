@@ -192,7 +192,7 @@ end
 
 
 def player_numbers(team_name, game)
-  
+  game.each do |
   end
 end
 
