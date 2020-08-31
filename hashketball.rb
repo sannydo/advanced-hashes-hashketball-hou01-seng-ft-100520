@@ -190,10 +190,12 @@ end
 # * Build a method, `player_numbers`, that takes in an argument of a team name and
 #   returns an `Array` of the jersey numbers for that team.
 
-def player_numbers team_name
-  game_hash.each do |key, value|
-    key[:player_name].each do |sort|
-    value[:number]
+def player_numbers(team_name)
+  numb = 0
+  game_hash.each do |jersey|
+    if jersey[:player_name] == player
+      return numb = jersey[:number]
+    end
   end
 end
 
