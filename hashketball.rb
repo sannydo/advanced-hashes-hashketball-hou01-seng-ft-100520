@@ -205,7 +205,7 @@ def player_numbers(input)
     end
   end
 end
-
+return output
 
 # * Build a method, `player_stats`, that takes in an argument of a player's name
 #   and returns a hash of that player's stats.
