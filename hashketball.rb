@@ -189,15 +189,11 @@ end
 
 # * Build a method, `player_numbers`, that takes in an argument of a team name and
 #   returns an `Array` of the jersey numbers for that team.
-p team_names
+p team_name
 
 def player_numbers(team_name)
-  numbers = 0
-  game_hash.each do |name, jersey|
-    jersey[:players].each do |stats|
-    if stats[:name] == player
-      return numbers = stats[:number]
-    end
+  team(team_name)[:players].map do |key, values|
+    value[:number]
   end
 end
 
