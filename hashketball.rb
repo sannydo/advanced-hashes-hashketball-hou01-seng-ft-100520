@@ -193,7 +193,7 @@ end
 
 def player_numbers(team_name, game)
   game.each do |team, game_hash|
-    if 
+    if game_hash[:]
   end
 end
 
